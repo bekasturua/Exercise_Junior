@@ -8,7 +8,7 @@ window.addEventListener("load", async () => {
   let postsHTML = "";
   posts.forEach((post) => {
     postsHTML += `
-          <ul class="ul">
+          <ul class="posts-list">
               <li>Title:  ${post.title}</li>
               <li>Body:  ${post.body}</li>
             </ul>

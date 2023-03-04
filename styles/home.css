@@ -1,0 +1,11 @@
+.home_title h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.user {
+    margin: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}

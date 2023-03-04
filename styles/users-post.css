@@ -1,0 +1,9 @@
+.home_title h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+.posts-list {
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -1,0 +1,31 @@
+.home_title h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
+.info div {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-posts {
+    display: flex;
+    justify-content: end;
+}
+
+.user-posts button {
+    cursor: pointer;
+    font-size: 25px;
+    background-color: rgb(8, 97, 11);
+    font-weight: bold;
+    color: white;
+}
+
+.user-posts button:hover {
+    background-color: rgb(23, 196, 46);
+}

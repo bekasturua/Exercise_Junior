@@ -7,23 +7,35 @@ window.addEventListener("load", async () => {
     .then((json) => json);
   let userInfoHTML = "";
   userInfoHTML += `
-    <h2 class="h2">Name:  ${user.name}</h2>
-    <h2 class="h2">Username:  ${user.username}</h2>
-    <h2 class="h2">Email:  ${user.email}</h2>
-    <h2 class="h2">Address</h2>
-    <h2 class="h2">Street:  ${user.address.street}</h2>
-    <h2 class="h2">Suite:  ${user.address.suite}</h2>
-    <h2 class="h2">City:  ${user.address.city}</h2>
-    <h2 class="h2">Zipcode:  ${user.address.zipcode}</h2>
-    <h2 class="h2">Address - Geo</h2>
-    <h2 class="h2">Lat:  ${user.address.geo.lat}</h2>
-    <h2 class="h2">Lng:  ${user.address.geo.lng}</h2>
-    <h2 class="h2">Phone:  ${user.phone}</h2>
-    <h2 class="h2">Website:  ${user.website}</h2>
-    <h2 class="h2">Company</h2>
-    <h2 class="h2">Name:  ${user.company.name}</h2>
-    <h2 class="h2">CatchPhrase:  ${user.company.catchPhrase}</h2>
-    <h2 class="h2">Bs:  ${user.company.bs}</h2>
+    <div class="info">
+      <div class="first-info">
+        <h3>Name:  ${user.name}</h3>
+        <h3>Username:  ${user.username}</h3>
+        <h3>Email:  ${user.email}</h3>
+        <h3>Phone:  ${user.phone}</h3>
+        <h3>Website:  ${user.website}</h3>
+      </div>
+      <div class="address-info">
+          <h1>Address</h1>
+          <h3>Street:  ${user.address.street}</h3>
+          <h3>Suite:  ${user.address.suite}</h3>
+          <h3>City:  ${user.address.city}</h3>
+          <h3>Zipcode:  ${user.address.zipcode}</h3>
+        <div class="address-geo-info">
+          <h1>Address - Geo</h1>
+          <h3>Lat:  ${user.address.geo.lat}</h3>
+          <h3>Lng:  ${user.address.geo.lng}</h3>
+        </div>
+      </div>
+      <div class="company-info">
+        <h1>Company</h1>
+        <h3>Name:  ${user.company.name}</h3>
+        <h3>CatchPhrase:  ${user.company.catchPhrase}</h3>
+        <h3>Bs:  ${user.company.bs}</h3>
+      </div>
+    </div>
+    
+   
 
 
     `;
