@@ -10,4 +10,11 @@ window.addEventListener("load", async () => {
   });
   const userListContainer = document.getElementsByClassName("users_list")[0];
   userListContainer.insertAdjacentHTML("afterend", usersNameHTML);
+
+  let userBtns = [...document.getElementsByClassName("user")];
+  userBtns.forEach((userBtn) => {
+    userBtn.addEventListener("click", () => {
+      location.replace("../users_information/index.html?userId=" + userBtn.id);
+    });
+  });
 });
