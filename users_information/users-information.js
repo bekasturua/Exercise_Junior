@@ -16,4 +16,9 @@ window.addEventListener("load", async () => {
   const userInfoListContainer =
     document.getElementsByClassName("user_information")[0];
   userInfoListContainer.insertAdjacentHTML("afterend", userInfoHTML);
+
+  const postBtn = document.getElementsByClassName("posts")[0];
+  postBtn.addEventListener("click", () => {
+    location.replace("../user_posts/index.html?userId=" + params.get("userId"));
+  });
 });
