@@ -12,18 +12,18 @@ window.addEventListener("load", async () => {
     <h2 class="h2">Email:  ${user.email}</h2>
     <h2 class="h2">Address</h2>
     <h2 class="h2">Street:  ${user.address.street}</h2>
-    <h2 class="h2">Street:  ${user.address.suite}</h2>
-    <h2 class="h2">Street:  ${user.address.city}</h2>
-    <h2 class="h2">Street:  ${user.address.zipcode}</h2>
+    <h2 class="h2">Suite:  ${user.address.suite}</h2>
+    <h2 class="h2">City:  ${user.address.city}</h2>
+    <h2 class="h2">Zipcode:  ${user.address.zipcode}</h2>
     <h2 class="h2">Address - Geo</h2>
-    <h2 class="h2">Street:  ${user.address.geo.lat}</h2>
-    <h2 class="h2">Street:  ${user.address.geo.lng}</h2>
+    <h2 class="h2">Lat:  ${user.address.geo.lat}</h2>
+    <h2 class="h2">Lng:  ${user.address.geo.lng}</h2>
     <h2 class="h2">Phone:  ${user.phone}</h2>
     <h2 class="h2">Website:  ${user.website}</h2>
     <h2 class="h2">Company</h2>
-    <h2 class="h2">Website:  ${user.company.name}</h2>
-    <h2 class="h2">Website:  ${user.company.catchPhrase}</h2>
-    <h2 class="h2">Website:  ${user.company.bs}</h2>
+    <h2 class="h2">Name:  ${user.company.name}</h2>
+    <h2 class="h2">CatchPhrase:  ${user.company.catchPhrase}</h2>
+    <h2 class="h2">Bs:  ${user.company.bs}</h2>
 
 
     `;
